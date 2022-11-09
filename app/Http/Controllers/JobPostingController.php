@@ -14,7 +14,8 @@ class JobPostingController extends Controller
      */
     public function index()
     {
-        return view('job_posting.index');
+        $posting = JobPosting::all();
+        return view('job_posting.index', compact('posting'));
     }
 
     /**
@@ -35,7 +36,8 @@ class JobPostingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $posting = JobPosting::create($request->all());
+        return response()->json(['message' => 'Job Posting has been Successfully Saved', 'data' => $posting]);
     }
 
     /**

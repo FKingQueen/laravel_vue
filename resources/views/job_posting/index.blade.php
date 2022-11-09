@@ -127,7 +127,7 @@
                 </nav>
             </div>
         <div class="mx-auto lg:ml-80"></div>
-        <job-posting-component/>
+        <job-posting-component :posting = "{{ $posting }}" />
     </div>
 <!-- Sidebar end -->
 
