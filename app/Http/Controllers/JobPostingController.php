@@ -82,6 +82,7 @@ class JobPostingController extends Controller
      */
     public function destroy(JobPosting $jobPosting)
     {
-        //
+        $jobPosting->delete();
+        return response()->json(['message' => 'Job Posting has been Successfully Deleted']);
     }
 }

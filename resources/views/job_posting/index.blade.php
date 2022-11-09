@@ -136,6 +136,7 @@
 </main>
     </div>
 </body>
+
     @vite('resources/js/app.js' )
     <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
@@ -155,4 +156,5 @@
         sidebar.style.top = parseInt(navbar.clientHeight) - 1 + "px";
     });
 </script>
+<!-- <script src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"></script> -->
 </html>
